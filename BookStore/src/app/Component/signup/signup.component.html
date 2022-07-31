@@ -1,0 +1,75 @@
+<div class="Block ">
+    <mat-card class="mat1">
+
+        <div>
+            <img class="img" src="../../../assets/Shopping.jpeg" alt="">
+        </div>
+
+        <div class="text">
+            ONLINE BOOK SHOPPING
+        </div>
+    </mat-card>
+
+    <mat-card class="mat2">
+        <div fxLayout="row" >
+            <button type="button" class="login">LOGIN</button>
+            <button type="button" class="signup" >SIGNUP</button>
+
+        </div>
+
+        <form [formGroup]="registerForm">
+            <div class="form-fields">
+                <div class="fullname">
+                    <div>
+                        <mat-label>Full Name</mat-label>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline">
+                            <input  formControlName="FullName" matInput placeholder="">
+                            <mat-error>Enter full name</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <div>
+                        <mat-label>Email Id</mat-label>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline">
+                            <input formControlName="Email" matInput placeholder="">
+                            <mat-error>Enter an email address</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="password">
+                    <div>
+                        <mat-label>Password</mat-label>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline">
+                            <input formControlName="Password" matInput placeholder="">
+                            <mat-error>Enter a password</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="number">
+                    <div>
+                        <mat-label>Mobile Number</mat-label>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline">
+
+                            <input formControlName="MobileNumber" matInput placeholder="">
+                            <mat-error>Enter a mobile number</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <button mat-button class="signupbutton">Signup</button>
+            </div>
+       
+        </form>
+    </mat-card>
+</div>
